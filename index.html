@@ -10,7 +10,7 @@
 <body>
     <pre id="markdown"></pre>
     <script>
-        fetch('note.md')
+        fetch('https://raw.githubusercontent.com/AndrewBert/my-obsidian-note/main/note.md')
             .then(response => response.text())
             .then(text => document.getElementById('markdown').textContent = text);
     </script>
